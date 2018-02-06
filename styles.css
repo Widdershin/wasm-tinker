@@ -36,6 +36,11 @@ body {
   align-self: start;
 }
 
+.log-item {
+  white-space: pre-wrap;
+  margin-bottom: 2px;
+}
+
 textarea {
   font-family: monospace;
   height: 95vh;
