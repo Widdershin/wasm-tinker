@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "budo src/index.ts --live --css styles.css  -- -p tsify",
+    "start": "budo src/index.ts:bundle.js --live  -- -p tsify",
     "bundle": "browserify src/index.ts -p tsify -o bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
