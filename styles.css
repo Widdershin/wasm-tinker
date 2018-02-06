@@ -36,6 +36,11 @@ body {
   align-self: start;
 }
 
+.log-item {
+  white-space: pre-wrap;
+  margin-bottom: 2px;
+}
+
 textarea {
   font-family: monospace;
   height: 95vh;
@@ -49,7 +54,7 @@ textarea {
 }
 
 input {
-  margin-left: 5px;
+  margin-left: 8px;
   font-family: monospace;
   width: 93%;
   border: none;
@@ -103,6 +108,7 @@ header>div {
 .log-item.info {
   color: aqua;
 }
+
 .log-item.result {
   color: hotpink;
 }
