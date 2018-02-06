@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo src/index.ts:bundle.js --live  -- -p tsify",
-    "bundle": "browserify src/index.ts -p tsify -o bundle.js",
+    "bundle": "browserify src/index.ts -p tsify -o bundle.js -g uglifyify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "browserify": "^15.2.0",
     "budo": "^11.1.0",
     "tsify": "^3.0.4",
-    "typescript": "^2.7.1"
+    "typescript": "^2.7.1",
+    "uglifyify": "^4.0.5"
   }
 }
