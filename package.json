@@ -1,0 +1,25 @@
+{
+  "name": "wasm-tinker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo src/index.ts --live --css styles.css  -- -p tsify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@cycle/dom": "^20.1.0",
+    "@cycle/run": "^4.1.0",
+    "wast2wasm": "0.0.1",
+    "xstream": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "budo": "^11.1.0",
+    "tsify": "^3.0.4",
+    "typescript": "^2.7.1"
+  }
+}

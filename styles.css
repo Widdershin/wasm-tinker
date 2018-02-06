@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 2px;
+  height: 100%;
+  background: #111;
+  color: white;
+  font-family: monospace;
+  font-size: 11pt;
+  overflow: hidden;
+}
+
+.tinker {
+  width: 100%;
+  height: 100%;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.wast {
+  flex-grow: 1;
+}
+
+.repl {
+  flex-grow: 1;
+  padding: 2px;
+  max-height: 95vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-self: start;
+}
+
+textarea {
+  font-family: monospace;
+  height: 95vh;
+  width: 95%;
+  background: none;
+  color: white;
+  border: none;
+  padding: 2px;
+  font-size: 11pt;
+
+}
+
+input {
+  margin-left: 5px;
+  font-family: monospace;
+  width: 93%;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 11pt;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+.contents>div {
+
+}
+
+@keyframes hueRotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(180deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+header {
+  padding: 2px;
+  margin: 2px;
+  margin-bottom: 5px;
+}
+
+header>div {
+  float: left;
+  background-image: linear-gradient(90deg, hotpink, lime, aqua, hotpink);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  animation: hueRotate 5s linear 0s infinite;
+}
+
+.log-item.error {
+  color: red;
+}
+
+.log-item.info {
+  color: aqua;
+}
+.log-item.result {
+  color: hotpink;
+}
